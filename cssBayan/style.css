@@ -3,3 +3,45 @@
     padding: 0;
     box-sizing: border-box;
   }
+  body {
+    background: rgb(36, 32, 40);
+  }
+  .wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .row {
+    background: rgb(36, 32, 40);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+  }
+  h1 {
+    margin-bottom: 10px;
+    color: whitesmoke;
+    padding-left: 10px;
+  }
+  .bayan {
+    width: 100%;
+    cursor: pointer;
+    line-height: 12px;
+  }
+  .bayan__item {
+    border-top: 3px solid whitesmoke;
+    margin: 5px;
+  }
+  .bayan__title {
+    display: block;
+    color: rgb(145, 108, 108);
+    padding: 5px 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bayan__title__text {
+    color: rgb(145, 108, 108);
+    transition: color 0.5s ease;
+  }
