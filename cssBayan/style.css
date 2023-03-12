@@ -72,20 +72,18 @@ h1 {
     height: 0;
 }
 .bayan__content {
-    padding: 3%;
-    max-width: 0;
-    max-height: 0;
+    height: 0;
+    width: 0;
     transition: max-height 0.5s ease;
+    cursor: pointer;
 }
 .bayan__image {
     margin-left: 15%;
-    width:50%;
+    width: 0;
     transition: width 0.5s ease;
+    padding: 3% 0;
 }
-.bayan__input:checked ~ .bayan__content{
-    max-width: 100%;
-    max-height: 100%;
-}
+
 .bayan__input:checked ~ .bayan__title .bayan__title__text {
     color: whitesmoke;
 }
@@ -96,7 +94,7 @@ h1 {
 display: block;
 }
 .bayan__input:checked ~ .bayan__content .bayan__image{
-    width: 60%;
+    width: 50%;
 }
 
 @media screen and (min-width:550px) {
@@ -112,12 +110,12 @@ display: block;
         font-size: 1.3rem;
     }
     .bayan {
-        width: 32rem;
+        width: 28rem;
     }
 }
 @media screen and (min-width: 1281px) {
     .wrapper {
-        font-size: 1.5rem;
+        font-size: 1.45rem;
     }
     .bayan {
         width: 34rem;
@@ -146,6 +144,6 @@ display: block;
         display: block;
     }
     .bayan__item:hover .bayan__image {
-        width: 60%;
+        width: 30%;
     }
 }
